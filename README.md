@@ -21,11 +21,13 @@ Reads the generated Postfix expression from left to right. Numbers are pushed on
 When an operator is encountered, the top two numbers are popped, the operation is applied, and the result is pushed back onto the stack.
 
 Compilation and Usage
+
 Because the code uses the pow() function from the standard math library, you must compile it with the -lm flag using GCC:
 gcc filename.c -o filename -lm
 ./filename
 
 Example I/O
+
 Example 1: Standard Arithmetic
 Input: 10 + 2 * 6
 PostFix Expression: 10 2 6 * + 
