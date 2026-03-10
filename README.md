@@ -11,6 +11,7 @@ alongside nested parenthesis ().
 5. Syntax Validation: Terminates with informative error messages for bracket mismatches, invalid characters, or insufficient operands.
 
 🧠Program Logic
+
 The program operates in two distinct phases:
 1. Infix to Postfix Conversion (Shunting Yard)
 Converts human-readable mathematical notation (e.g., 3 + 4 * 2) into Reverse Polish Notation / Postfix (e.g., 3 4 2 * +).
