@@ -134,7 +134,8 @@ void InfixToPostfix(char *expr, char *postfix)
             while (expr[i] == ' ')
                 i++;
             if (expr[i] == '-')
-                postfix[j++] = expr[i];
+                postfix[j++] = expr[i++];
+            i--;
         }
         else if (ch == ')')
         {
