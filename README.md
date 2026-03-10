@@ -1,4 +1,5 @@
 Infix to Postfix Expression Evaluator
+
 A robust C implementation of Dijkstra's Shunting Yard algorithm designed to parse, convert, and evaluate complex mathematical expressions.
 This project demonstrates core concepts in lexical scanning, operator precedence, and stack-based parsing.
 
@@ -23,21 +24,31 @@ When an operator is encountered, the top two numbers are popped, the operation i
 Compilation and Usage
 
 Because the code uses the pow() function from the standard math library, you must compile it with the -lm flag using GCC:
+
 gcc filename.c -o filename -lm
+
 ./filename
 
 Example I/O
 
 Example 1: Standard Arithmetic
+
 Input: 10 + 2 * 6
+
 PostFix Expression: 10 2 6 * + 
+
 Expression Result: 22.0000
 
 Example 2: Floating Points and Negative Numbers
+
 Input: -5.5 + (3.14 * 2) ^ 2
+
 PostFix Expression: -5.5 3.14 2 * 2 ^ + 
+
 Expression Result: 33.9396
 
 Example 3: Error Handling
+
 Input: 5 + (3 * 2
+
 Invalid Expression-Bracket Mismatch
